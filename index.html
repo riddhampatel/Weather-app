@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Weather by Location</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>🌍 Live Weather at Your Location</h1>
+  <button onclick="getLocationWeather()">Get My Weather</button>
+
+  <div id="weatherBox" class="weather-box" style="display:none;">
+    <h2 id="cityName"></h2>
+    <div class="weather-emoji" id="weatherEmoji">⛅</div>
+    <div class="weather-details">
+      <p><strong>Temperature:</strong> <span id="temperature"></span>°C</p>
+      <p><strong>Condition:</strong> <span id="condition"></span></p>
+      <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!--  -->
